@@ -9,6 +9,9 @@ const outputMessage = (event) => {
     I can purchase ${favoriteThing.value} at ${purchaseLocation.value}.
     </p>
     `
+    favoriteThing.value = "";
+    favoriteThing.focus();
+    purchaseLocation.value = "";
 }
 
 saveButton.addEventListener("click", outputMessage)
